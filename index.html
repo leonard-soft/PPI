@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Normalista Superior Corozal | PPI</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./img/escudo.png">
+    <!-- Agrega el enlace a Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <!-- font2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<!-- Encabezado con color verde claro -->
+<header style="background-color: #C0F192; padding: 20px;">
+    <div class="container ">
+        <h1 class="Playfair_Display" align="center">
+            <img class="logo" src="./img/logo.png">
+            PPI Normalista Superior Corozal
+            <img class="logo" src="./img/libro-logo.png">
+        </h1>
+    </div>
+</header>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul style="display:auto;margin:auto;" class=" align navbar-nav">
+                <li class="nav-item">
+                    <button id="home" class="btn Playfair_Display nav-link">Inicio</button>
+                </li>
+                <li class="nav-item">
+                    <button id="teachers" class="btn Playfair_Display nav-link">Docentes</button>
+                </li>
+                <li class="nav-item">
+                    <button id="pts" class="btn Playfair_Display nav-link">PTS</button>
+                </li>
+                <li class="nav-item">
+                    <button id="moments" class="btn Playfair_Display nav-link">Momentos pedagogicos</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav> 
+
+<div id="body">
+
+    
+
+</div>
+
+<!-- Pie de Página -->
+<footer style="background-color: #b0e57c; padding: 20px; text-align: center;">
+    <div class="container">
+        <p>Derechos de autor © 2023. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<!-- Agrega el enlace a Bootstrap JS y jQuery (opcional) para funcionalidades avanzadas -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Components -->
+<script src="./home/index.js"></script>
+<script src="./home/home.js"></script>
+<script src="./teachers/inde.js"></script>
+<script src="./pts/inde.js"></script>
+
+<!--Jquery test code-->
+<script>
+
+    $("#moments").click(function () {
+
+        $("#body").html("");
+
+        let html = ` <br> <br>
+            
+        <header style="width:1200px; display:block; margin:auto;" class="bg-dark d-flex justify-content-center py-3">
+            <ul class="nav nav-pills">
+                <button class="nav-item"><a href="#leonard" class="nav-link">Leonardo</a></button>
+                <button class="nav-item"><a href="#Angela" class="nav-link">Angela</a></button>
+                <button class="nav-item"><a href="#Emelyn" class="nav-link">Emelyn</a></button>
+                <button class="nav-item"><a href="#Mara" class="nav-link">Mara</a></button>
+                <button class="nav-item"><a href="#Rosmary" class="nav-link">Rosmary</a></button>
+            </ul>
+        </header> <br> <br>
+
+        <div id="minibody">
+          
+            <video id="leonard" width="600" height="300" style="box-shadow:0px 0px 0px 1px; display:block; margin:auto;" controls>
+                <source src="videos/Leonardo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video> <br> <br>
+            
+            <video id="Angela" width="600" height="300" style="box-shadow:0px 0px 0px 1px; display:block; margin:auto;" controls>
+                <source src="videos/Angela.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video> <br> <br>
+
+            <video id="Emelyn" width="600" height="300" style="box-shadow:0px 0px 0px 1px; display:block; margin:auto;" controls>
+                <source src="videos/emelyn.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video> <br> <br>
+
+            <video id="Mara" width="600" height="300" style="box-shadow:0px 0px 0px 1px; display:block; margin:auto;" controls>
+                <source src="videos/mara.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video> <br> <br>
+
+            <video id="Rosmary" width="600" height="300" style="box-shadow:0px 0px 0px 1px; display:block; margin:auto;" controls>
+                <source src="videos/rosmary.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video> <br> <br>
+
+        </div>
+        `;
+
+        $("#body").html(html);
+    })
+    
+</script>
+
+</body>
+</html>
